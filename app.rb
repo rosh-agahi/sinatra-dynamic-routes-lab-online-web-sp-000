@@ -17,11 +17,7 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     
-    @count = 1 
-    until @count == @number do
-      puts "#{@phrase}"
-      @count += 1
-    end
+    "#{@phrase} " * @number
   end 
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
