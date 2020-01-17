@@ -17,7 +17,7 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     
-    @count = 0 
+    @count = 1 
     until @count == @number do
       puts "#{@phrase}"
       @count += 1
